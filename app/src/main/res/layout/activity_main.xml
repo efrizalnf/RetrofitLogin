@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_ind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:gravity="center_horizontal"
+        android:text="@string/title_enter_post"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@+id/et_title"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ind"
+        android:hint="@string/hint_title"
+        app:layout_constraintBottom_toTopOf="@+id/et_body"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/et_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_title"
+        android:hint="@string/hint_body"
+        android:lines="1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_body"
+        android:hint="@string/hint_title" />
+
+    <EditText
+        android:id="@+id/et_long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_lat"
+        android:hint="@string/hint_body"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/et_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_long"
+        android:hint="@string/hint_title" />
+
+    <EditText
+        android:id="@+id/et_ver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_body"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/et_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_ver"
+        android:hint="@string/hint_title" />
+
+    <EditText
+        android:id="@+id/et_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_android"
+        android:hint="@string/hint_body"
+        android:lines="1" />
+    <EditText
+        android:id="@+id/et_appori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_model"
+        android:hint="@string/hint_body"
+        android:lines="1" />
+    <EditText
+        android:id="@+id/et_appmodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_appori"
+        android:hint="@string/hint_body"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_appmodel"
+        android:background="@color/colorAccent"
+        android:text="@string/action_submit"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/tv_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_submit"
+        />
+
+</RelativeLayout>
