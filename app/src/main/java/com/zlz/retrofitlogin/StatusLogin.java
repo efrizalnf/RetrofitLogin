@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by zlz on 19,September,2019
  */
-public class StatusLogin<L> {
+public class StatusLogin {
     @SerializedName("status")
     @Expose
     private Boolean status;

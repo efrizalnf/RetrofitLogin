@@ -10,7 +10,7 @@ import retrofit2.http.POST;
  */
 public interface Api {
     @FormUrlEncoded
-    @POST("/auth/login")
+    @POST("auth/login")
     Call<StatusLogin> saveData(@Field("email") String email,
                                   @Field("password") String password,
                                   @Field("lat") String latitude,

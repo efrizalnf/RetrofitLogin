@@ -14,8 +14,8 @@ public class RetrofitClient {
     public static Retrofit getClient(String baseUrl) {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl(baseUrl)
-                    .client(getOkHttpClient())
+                    .baseUrl("https://jsmart.id/api/")
+//                    .client(getOkHttpClient())
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(UnsafeOkHttpClient.getUnsafeOkHttpClient())
                     .build();
