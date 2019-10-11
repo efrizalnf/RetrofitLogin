@@ -61,17 +61,17 @@ public class MainActivity extends AppCompatActivity {
                 String model = modeldevice.getText().toString().trim();
                 String appor = appori.getText().toString().trim();
                 String appve = appver.getText().toString().trim();
-                if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(pass) && !TextUtils.isEmpty(lat) && !TextUtils.isEmpty(longi) && !TextUtils.isEmpty(reg) && !TextUtils.isEmpty(ver) && !TextUtils.isEmpty(andro) && !TextUtils.isEmpty(model) && !TextUtils.isEmpty(appor) && !TextUtils.isEmpty(appve)) {
-                sendPost(email,pass,lat,longi,reg, ver, andro, model,appor, appve);
-                }
+//                if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(pass) && !TextUtils.isEmpty(lat) && !TextUtils.isEmpty(longi) && !TextUtils.isEmpty(reg) && !TextUtils.isEmpty(ver) && !TextUtils.isEmpty(andro) && !TextUtils.isEmpty(model) && !TextUtils.isEmpty(appor) && !TextUtils.isEmpty(appve)) {
+//                sendPost(email,pass,lat,longi,reg, ver, andro, model,appor, appve);
+//                }
             }
         });
 
         mAPI = RetrofitClient.getClient(" ").create(Api.class);
-//        sendPost();
+        sendPost();
     }
 
-    public void sendPost(String email,String pass,String lat,String longi,String reg,String ver,String andro,String model,String appor,String appve) {
+    public void sendPost() {
         mAPI.saveData("zalzondabuzz@gmail.com", "Qwerty2!", " ", " ", " ", " ", " ", " ", " ", " ").enqueue(new Callback<StatusLogin>() {
             @Override
             public void onResponse(Call<StatusLogin> call, Response<StatusLogin> response){
